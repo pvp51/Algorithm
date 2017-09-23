@@ -92,12 +92,12 @@ public class AirportSimulation{
 			maxFirstClassLength = firstClassQ.size();
 		}
 		max = Math.max(waitingTimeFirstClass1, waitingTimeFirstClass2);
-		if( maxWaitimgTimeFirstClassQ < max){
+		if(maxWaitimgTimeFirstClassQ < max){
 			maxWaitimgTimeFirstClassQ = max;
 		}
 		max = Math.max(waitingTimeCoach1, waitingTimeCoach2);
 		max1 = Math.max(max, waitingTimeCoach3);
-		if( maxWaitimgTimeCoachQ < max1){
+		if(maxWaitimgTimeCoachQ < max1){
 			maxWaitimgTimeCoachQ = max1;
 		}
 	}
@@ -108,11 +108,11 @@ public class AirportSimulation{
 		//System.out.println("Size of firstClass queue: " +firstClassQ.size());
 
 		System.out.println("Actual time of simulation: " +counter);
-		System.out.println("Max Size of coach queue: " +maxCoachLength);
-		System.out.println("Max Size of firstClass queue: " +maxFirstClassLength);	
+		System.out.println("Max Size of firstClass queue: " +maxFirstClassLength);
+		System.out.println("Max Size of coach queue: " +maxCoachLength);			
 
-		System.out.println("Average Waiting Time of firstClass queue: " +totalWaitingTimeFirstClass/checkInTime);
-		System.out.println("Average Waiting Time of Coach queue: " +totalWaitingTimeCoach/checkInTime);
+		System.out.println("Average Waiting Time of firstClass queue: " +totalWaitingTimeFirstClass/maxFirstClassLength);
+		System.out.println("Average Waiting Time of Coach queue: " +totalWaitingTimeCoach/maxCoachLength);
 		System.out.println("Max Waiting Time of firstClass queue: " +maxWaitimgTimeFirstClassQ);
 		System.out.println("Max Waiting Time of Coach queue: " +maxWaitimgTimeCoachQ);
 
