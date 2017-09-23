@@ -126,7 +126,7 @@ public class AirportSimulation{
 	private void coachServiceStation1() {
 		Passenger passenger = null;
 		if(!coachQ.isEmpty()){
-			if(randomEvent(avgServiceFirstClass)){
+			if(randomEvent(avgServiceCoach)){
 			passenger = new Passenger();
 			passenger = coachQ.dequeue();
 			System.out.println(passenger+ " removed from the Coach queue");
@@ -144,7 +144,7 @@ public class AirportSimulation{
 	private void coachServiceStation2() {
 		Passenger passenger = null;
 		if(!coachQ.isEmpty()){
-			if(randomEvent(avgServiceFirstClass)){
+			if(randomEvent(avgServiceCoach)){
 			passenger = new Passenger();
 			passenger = coachQ.dequeue();
 			System.out.println(passenger+ " removed from the Coach queue");
@@ -162,7 +162,7 @@ public class AirportSimulation{
 	private void coachServiceStation3() {
 		Passenger passenger = null;
 		if(!coachQ.isEmpty()){
-			if(randomEvent(avgServiceFirstClass)){
+			if(randomEvent(avgServiceCoach)){
 			passenger = new Passenger();
 			passenger = coachQ.dequeue();
 			System.out.println(passenger+ " removed from the Coach queue");
