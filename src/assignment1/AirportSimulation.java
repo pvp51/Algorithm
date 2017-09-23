@@ -134,13 +134,13 @@ public class AirportSimulation{
 		if(!firstClassQ.isEmpty()){
 			if(randomEvent(avgServiceFirstClass)){
 				totalServiceTimefirstClass1 += serviceTimefirstClass1;
-				passenger = new Passenger();
+				passenger = firstClassQ.dequeue();
 				//total waiting time for firstClass queue
 				waitingTimeFirstClass1 = counter - passenger.getArrivalTime();
-				System.out.println(waitingTimeFirstClass1);
+				//System.out.println(waitingTimeFirstClass1);
 				totalWaitingTimeFirstClass += waitingTimeFirstClass1;
 
-				passenger = firstClassQ.dequeue();
+				
 				System.out.println(passenger.getId()+ " removed from the FirstClass queue");
 				firstClass1.setPassengerID(passenger.getId());
 				firstClass1free = false;
@@ -161,13 +161,13 @@ public class AirportSimulation{
 		if(!firstClassQ.isEmpty()){
 			if(randomEvent(avgServiceFirstClass)){
 				totalServiceTimefirstClass2 += serviceTimefirstClass2;
-				passenger = new Passenger();
+				passenger = firstClassQ.dequeue();
 				//total waiting time for firstClass queue
 				waitingTimeFirstClass2 = counter - passenger.getArrivalTime();
-				System.out.println(waitingTimeFirstClass2);
+				//System.out.println(waitingTimeFirstClass2);
 				totalWaitingTimeFirstClass += waitingTimeFirstClass2;
 
-				passenger = firstClassQ.dequeue();
+				
 				System.out.println(passenger.getId()+ " removed from the FirstClass queue");
 				firstClass2.setPassengerID(passenger.getId());
 				firstClass2free = false;
@@ -188,11 +188,10 @@ public class AirportSimulation{
 		if(!coachQ.isEmpty()){
 			if(randomEvent(avgServiceCoach)){
 				totalServiceTimeCoach1 += serviceTimeCoach1;
-				passenger = new Passenger();
 				passenger = coachQ.dequeue();
 				//total waiting time for coach queue
 				waitingTimeCoach1 = counter - passenger.getArrivalTime();
-				System.out.println(waitingTimeCoach1);
+				//System.out.println(waitingTimeCoach1);
 				totalWaitingTimeCoach += waitingTimeCoach1;
 
 				System.out.println(passenger.getId()+ " removed from the Coach queue");
@@ -215,13 +214,13 @@ public class AirportSimulation{
 		if(!coachQ.isEmpty()){
 			if(randomEvent(avgServiceCoach)){
 				totalServiceTimeCoach2 += serviceTimeCoach2;
-				passenger = new Passenger();
+				passenger = coachQ.dequeue();
 				//total waiting time for coach queue
 				waitingTimeCoach2 = counter - passenger.getArrivalTime();
-				System.out.println(waitingTimeCoach2);
+				//System.out.println(waitingTimeCoach2);
 				totalWaitingTimeCoach += waitingTimeCoach2;
 
-				passenger = coachQ.dequeue();
+				
 				System.out.println(passenger.getId()+ " removed from the Coach queue");
 				coach2.setPassengerID(passenger.getId());
 				coach2free = false;
@@ -242,13 +241,13 @@ public class AirportSimulation{
 		if(!coachQ.isEmpty()){
 			if(randomEvent(avgServiceCoach)){
 				totalServiceTimeCoach3 += serviceTimeCoach3;
-				passenger = new Passenger();
+				passenger = coachQ.dequeue();
 				//total waiting time for coach queue
 				waitingTimeCoach3 = counter - passenger.getArrivalTime();
-				System.out.println(waitingTimeCoach3);
+				//System.out.println(waitingTimeCoach3);
 				totalWaitingTimeCoach += waitingTimeCoach3;
 
-				passenger = coachQ.dequeue();
+				
 				System.out.println(passenger.getId()+ " removed from the Coach queue");
 				coach3.setPassengerID(passenger.getId());
 				coach3free = false;
