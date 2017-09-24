@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class AirportSimulation{
 
-	private static int counter = 1;
+	private static int counter = 1;	//current time
 
 	private static QueueADT<Passenger> firstClassQ;
 	private static QueueADT<Passenger> coachQ;
@@ -45,18 +45,15 @@ public class AirportSimulation{
 	private static int waitingTimeCoach5=0;	//when firstclass2 service station is empty and coach queue is not
 	private static int maxWaitimgTimeFirstClassQ = 0;
 	private static int maxWaitimgTimeCoachQ = 0;
-
 	private static int totalWaitingTimeFirstClass = 0;
 	private static int totalWaitingTimeCoach = 0;
 
-
-
 	//input variables
-	private int checkInTime = 100;
-	private int avgArrivalFirstClass = 5;
-	private int avgArrivalCoach = 3;
-	private int avgServiceFirstClass = 18;
-	private int avgServiceCoach = 14;
+	private int checkInTime;
+	private int avgArrivalFirstClass;
+	private int avgArrivalCoach;
+	private int avgServiceFirstClass;
+	private int avgServiceCoach;
 
 	public AirportSimulation(){		
 		firstClassQ = new QueueADT<Passenger>();
