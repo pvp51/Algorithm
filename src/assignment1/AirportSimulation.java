@@ -92,13 +92,13 @@ public class AirportSimulation{
 		
 		System.out.println("Please enter the check-in Time(min):");
 		checkInTime=scan.nextInt();
-		System.out.println("Please enter the avergae Arrival Time for First Class passenger(min):");
+		System.out.println("Please enter the average Arrival Time for First Class passenger(min):");
 		avgArrivalFirstClass=scan.nextInt();
-		System.out.println("Please enter the avergae Arrival Time for Coach passenger(min):");
+		System.out.println("Please enter the average Arrival Time for Coach passenger(min):");
 		avgArrivalCoach=scan.nextInt();
-		System.out.println("Please enter the avergae Service Time for First Class passenger(min):");
+		System.out.println("Please enter the average Service Time for First Class passenger(min):");
 		avgServiceFirstClass=scan.nextInt();
-		System.out.println("Please enter the avergae Service Time for Coach passenger(min):");
+		System.out.println("Please enter the average Service Time for Coach passenger(min):");
 		avgServiceCoach=scan.nextInt();
 		
 		scan.close();
@@ -106,10 +106,10 @@ public class AirportSimulation{
 		System.out.println("*************************************");
 		System.out.println("Input Parameters");
 		System.out.println("The check-in Time(min): "+checkInTime);
-		System.out.println("The avergae Arrival Time for First Class passenger(min): "+avgArrivalFirstClass);
-		System.out.println("The check-in Time(min): "+avgArrivalCoach);
-		System.out.println("The check-in Time(min): "+avgServiceFirstClass);
-		System.out.println("The check-in Time(min): "+avgServiceCoach);
+		System.out.println("The average Arrival Time for First Class passenger(min): "+avgArrivalFirstClass);
+		System.out.println("The average Arrival Time for Coach passenger(min): "+avgArrivalCoach);
+		System.out.println("The average Service Time for First Class Station(min): "+avgServiceFirstClass);
+		System.out.println("The average Service Time for Coach Station(min): "+avgServiceCoach);
 		System.out.println("*************************************");
 		
 		
